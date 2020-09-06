@@ -21,5 +21,5 @@ export default function getOriginalUrlFromRequest<
   ReqBody = any,
   ReqQuery = Query
 >(req: Request<P, ResBody, ReqBody, ReqQuery>) {
-  return req.originalUrl;
+  return req.baseUrl;
 }

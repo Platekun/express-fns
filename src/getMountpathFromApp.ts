@@ -36,5 +36,5 @@ import { Application } from 'express';
  * app.use(['/adm*n', '/manager'], admin) // load the 'admin' router on '/adm*n' and '/manager', on the parent app
  */
 export default function getMounthPathFromApp(app: Application) {
-  return app.locals;
+  return app.mountpath;
 }
